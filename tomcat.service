@@ -4,7 +4,7 @@ After=network.target
 [Service]
 Type=forking
 Environment=CATALINA_PID=/home/user1/apache-tomcat-10.0.4/temp/tomcat9.pid
-Environment=JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
+Environment=JAVA_HOME=/home/user1/java/jdk16
 Environment=CATALINA_HOME=/home/user1/apache-tomcat-10.0.4
 Environment=CATALINA_BASE=/home/user1/apache-tomcat-10.0.4
 Environment="CATALINA_OPTS=-Xms512m -Xmx1G"
