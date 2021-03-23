@@ -11,7 +11,7 @@ Environment="CATALINA_OPTS=-Xms512m -Xmx1G"
 Environment="JAVA_OPTS=-Dfile.encoding=UTF-8 -Djava.awt.headless=true"
 ExecStart=/home/user1/apache-tomcat-10.0.4/bin/startup.sh
 ExecStop=/home/user1/apache-tomcat-10.0.4/bin/shutdown.sh
-User=tomcat
-Group=tomcat
+User=user1
+Group=users
 [Install]
 WantedBy=multi-user.target
