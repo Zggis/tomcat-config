@@ -1,0 +1,17 @@
+[Unit]
+Description=Apache Tomcat
+After=network.target
+[Service]
+Type=forking
+Environment=CATALINA_PID=/home/user1/apache-tomcat-10.0.4/temp/tomcat9.pid
+Environment=JAVA_HOME=/usr/lib/jvm/java-1.8.0-openjdk-amd64
+Environment=CATALINA_HOME=/home/user1/apache-tomcat-10.0.4
+Environment=CATALINA_BASE=/home/user1/apache-tomcat-10.0.4
+Environment="CATALINA_OPTS=-Xms512m -Xmx1G"
+Environment="JAVA_OPTS=-Dfile.encoding=UTF-8 -Djava.awt.headless=true"
+ExecStart=/home/user1/apache-tomcat-10.0.4/bin/startup.sh
+ExecStop=/home/user1/apache-tomcat-10.0.4/bin/shutdown.sh
+User=tomcat
+Group=tomcat
+[Install]
+WantedBy=multi-user.target
