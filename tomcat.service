@@ -3,14 +3,14 @@ Description=Apache Tomcat
 After=network.target
 [Service]
 Type=forking
-Environment=CATALINA_PID=/home/user1/apache-tomcat-10.0.4/temp/tomcat9.pid
+Environment=CATALINA_PID=/home/user1/apache-tomcat-8.5.64/temp/tomcat9.pid
 Environment=JAVA_HOME=/home/user1/java/jdk16
-Environment=CATALINA_HOME=/home/user1/apache-tomcat-10.0.4
-Environment=CATALINA_BASE=/home/user1/apache-tomcat-10.0.4
+Environment=CATALINA_HOME=/home/user1/apache-tomcat-8.5.64
+Environment=CATALINA_BASE=/home/user1/apache-tomcat-8.5.64
 Environment="CATALINA_OPTS=-Xms512m -Xmx1G"
 Environment="JAVA_OPTS=-Dfile.encoding=UTF-8 -Djava.awt.headless=true"
-ExecStart=/home/user1/apache-tomcat-10.0.4/bin/startup.sh
-ExecStop=/home/user1/apache-tomcat-10.0.4/bin/shutdown.sh
+ExecStart=/home/user1/apache-tomcat-8.5.64/bin/startup.sh
+ExecStop=/home/user1/apache-tomcat-8.5.64/bin/shutdown.sh
 User=user1
 Group=users
 [Install]
