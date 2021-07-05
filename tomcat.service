@@ -7,7 +7,7 @@ Environment=CATALINA_PID=/home/user1/apache-tomcat-8.5.64/temp/tomcat9.pid
 Environment=JAVA_HOME=/home/user1/java/jdk16
 Environment=CATALINA_HOME=/home/user1/apache-tomcat-8.5.64
 Environment=CATALINA_BASE=/home/user1/apache-tomcat-8.5.64
-Environment="CATALINA_OPTS=-Xms512m -Xmx1G"
+Environment="CATALINA_OPTS=-Xms256m -Xmx256m"
 Environment="JAVA_OPTS=-Dfile.encoding=UTF-8 -Djava.awt.headless=true"
 ExecStart=/home/user1/apache-tomcat-8.5.64/bin/startup.sh
 ExecStop=/home/user1/apache-tomcat-8.5.64/bin/shutdown.sh
